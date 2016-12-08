@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: basic_development
+  database: timerrapp_development
 
 
 test: &test
   <<: *default
-  database: basic_test
+  database: timerrapp_test
 
 production:
   <<: *default
