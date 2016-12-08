@@ -20,4 +20,8 @@
 !/log/.keep
 /tmp
 
+# Ignore database
+config/database.yml
 
+# Ignore custom files
+.byebug_history
