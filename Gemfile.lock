@@ -206,8 +206,9 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    selenium-webdriver (3.0.3)
+    selenium-webdriver (2.45.0)
       childprocess (~> 0.5)
+      multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
     shoulda-matchers (3.1.1)
@@ -289,7 +290,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  selenium-webdriver
+  selenium-webdriver (= 2.45.0)
   shoulda-matchers
   sidekiq
   simplecov

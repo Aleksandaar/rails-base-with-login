@@ -51,7 +51,8 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
   gem 'database_cleaner'
-  gem 'selenium-webdriver'
+  # For compatibility issues, use old version for now
+  gem 'selenium-webdriver', '2.45.0'
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'spring-commands-rspec'
