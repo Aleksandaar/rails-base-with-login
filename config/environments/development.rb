@@ -36,16 +36,18 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :user_name => '',
-    :password => '',
-    :address => 'mailtrap.io',
-    :domain => 'mailtrap.io',
-    :port => '2525',
-    :authentication => :cram_md5,
-    :enable_starttls_auto => true
-  }
+  config.action_mailer.default_url_options = { host: 'http://localhost:3000' }
+  config.action_mailer.asset_host = 'http://localhost:3000'
+  config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.smtp_settings = {
+  #   :user_name => '',
+  #   :password => '',
+  #   :address => 'mailtrap.io',
+  #   :domain => 'mailtrap.io',
+  #   :port => '2525',
+  #   :authentication => :cram_md5,
+  #   :enable_starttls_auto => true
+  # }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
