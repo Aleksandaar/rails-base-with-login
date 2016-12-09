@@ -1,6 +1,4 @@
-<a href='https://semaphoreci.com/kolosek/basic'> <img src='https://semaphoreci.com/api/v1/kolosek/basic/branches/master/badge.svg' alt='Build Status'></a>
-
-Basic Rails 4 application. 
+Basic Rails 4 application.
 
 Deployable to Heroku, includes Redis, Mail, Bootstrap.
 
@@ -31,4 +29,4 @@ For testing and development:
 
 ### License
 
-Basic is made by [Kolosek IT](http://kolosek.com)© 2011-2016 . This repo is free to be used.
+Basic upgraded from [Basic/Kolosek IT](https://github.com/kolosek/basic)©
