@@ -36,8 +36,8 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  config.action_mailer.default_url_options = { host: 'http://localhost:3000' }
-  config.action_mailer.asset_host = 'http://localhost:3000'
+  config.action_mailer.default_url_options = { host: Rails.application.secrets.host }
+  config.action_mailer.asset_host = Rails.application.secrets.assets_host
   config.action_mailer.delivery_method = :letter_opener
 
   # Raises error for missing translations
